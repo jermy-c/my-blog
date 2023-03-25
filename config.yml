@@ -20,10 +20,14 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
-    - identifier: portfolio
-      name: Portfolio
-      url: https://jeremyc.netlify.app/
+    - identifier: ideas
+      name: Ideas
+      url: /ideas/
       weight: 30
+    - identifier: journal
+      name: Journal
+      url: /journal/
+      weight: 40
 
 
 params:
@@ -39,6 +43,8 @@ params:
       url: https://github.com/jermy-c
     - name: linkedin
       url: https://www.linkedin.com/in/jermy-c/
+    - name: cv
+      url: https://jeremyc.netlify.app/
     - name: email
       url: jermybz01@gmail.com
 

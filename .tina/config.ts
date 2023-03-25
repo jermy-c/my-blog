@@ -33,10 +33,14 @@ export default defineConfig({
             required: true,
           },
           {
-            label: 'Tags',
-            name: 'tags',
-            type: 'string',
-            list: true,
+            label: "Draft",
+            name: "draft",
+            type: "boolean",
+          },
+          {
+            label: "Date",
+            name: "date",
+            type: "datetime",
           },
           {
             type: "rich-text",
@@ -44,6 +48,20 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
+          {
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true,
+          },
+          {
+            label: 'Description',
+            name: 'description',
+            type: 'string',
+            ui: {
+              component: 'textarea',
+            },
+          }
         ],
       },
       {
@@ -60,10 +78,14 @@ export default defineConfig({
             required: true,
           },
           {
-            label: 'Tags',
-            name: 'tags',
-            type: 'string',
-            list: true,
+            label: "Draft",
+            name: "draft",
+            type: "boolean",
+          },
+          {
+            label: "Date",
+            name: "date",
+            type: "datetime",
           },
           {
             type: "rich-text",

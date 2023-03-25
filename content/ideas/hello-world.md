@@ -1,5 +1,7 @@
 ---
 title: 'Hello, World!'
+draft: true
+date: '2023-03-02T06:00:00.000Z'
 ---
 
 ## Hello World!
