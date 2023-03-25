@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tinacms dev -c \"hugo server -D -p 1313\"",
     "build": "npx tinacms build && hugo"
   },
   "repository": {

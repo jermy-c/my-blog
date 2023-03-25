@@ -1,15 +1,71 @@
 baseURL: 'https://www.theengineeringjourney.com/'
 languageCode: 'en-us'
 title: 'The Engineering Journey'
+googleAnalytics: G-MH48XHJBNT
 theme: 'PaperMod'
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: portfolio
+      name: Portfolio
+      url: https://jeremyc.netlify.app/
+      weight: 30
+
+
 params:
+  description: I’m Jeremy Chang, and I’m a Junior Software Engineer. Join me on my journey to become the best Software Engineer possible. I’ll be sharing the ups and downs of my journey from a Junior perspective here.
+  author: Jeremy Chang
+
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
+    Title: 👋 Hi! Join me on my Journey!
+    Content: I’m Jeremy Chang, and I’m a Junior Software Engineer. Join me on my journey to become the best Software Engineer possible. I’ll be sharing the ups and downs of my journey from a Junior perspective here.
 
   socialIcons: # optional
-    - name: "platform"
-      url: "link"
-    - name: "platform 2"
-      url: "link2"
+    - name: github
+      url: https://github.com/jermy-c
+    - name: linkedin
+      url: https://www.linkedin.com/in/jermy-c/
+    - name: email
+      url: jermybz01@gmail.com
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  editPost:
+    URL: "https://github.com/jermy-c/my-blog/blob/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: false
+    disable: false
+    respectDoNotTrack: true
+    useSessionStorage: false
